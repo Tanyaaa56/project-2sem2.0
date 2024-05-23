@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transport</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+<h1>Бронювання квитка на транспорт</h1>
+<form action="/transport/" method="post">
+  <div class="form-group"></div>
+  {{form.name.label}}
+  {{form.name(class='form-control')}}
+  <div>
+    <div class="form-group"></div>
+    {{form.surname.label}}
+  {{form.surname(class='form-control')}}
+    <div>
+    <div class="form-group"></div>
+      {{form.pass_id.label}}
+  {{form.pass_id(class='form-control')}}
+        <div>
+    <div class="form-group"></div>
+      {{form.vaga.label}}
+  {{form.vaga(class='form-control', max='30')}}
+  </div>
+      {{form.submit(class='btn-primary')}}
+</form>
+</body>
+</html>
